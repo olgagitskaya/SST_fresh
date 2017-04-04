@@ -11,7 +11,14 @@ public class HtmlPage {
     }
 
     public String toString() {
-        return "<html>" + "<body>" + webElements + "</body>" + "</html>";
+        StringBuilder buf = new StringBuilder();
+        buf.append("<html>" + "<body>");
+        for(WebElement webElement : webElements)
+        {
+            buf.append(webElement);
+        }
+        buf.append("</body>" + "</html>");
+        return buf.toString();
     }
 
     public String addWebElement(WebElement webElement)
