@@ -9,12 +9,14 @@ public class Runner {
         list.addListItem(new ListItem("Item number one"));
         list.addListItem(new ListItem("Item number two"));
         WebElement webElement3 = list;
-
+        WebElement webElement4 = new Table(5,8);
+        webElement4.setStyle(" style=\"background-color: green; border-color: red; border-style: solid; padding: 5px\"");
 
         HtmlPage page = new HtmlPage();
         page.addWebElement(webElement1);
         page.addWebElement(webElement2);
         page.addWebElement(webElement3);
+        page.addWebElement(webElement4);
         System.out.println(page.toString());
     }
 }
