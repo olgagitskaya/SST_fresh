@@ -8,6 +8,7 @@ public class Div extends WebElement {
     }
 
     public String toString() {
-        return "<div>" + getText() + "</div>";
+        String classProperty = super.getClassProperty().toString();
+        return "<div class=\"" + classProperty + "\">" + getText() + "</div>";
     }
 }
