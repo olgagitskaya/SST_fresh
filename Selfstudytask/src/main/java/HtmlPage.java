@@ -5,7 +5,8 @@ import java.util.ArrayList;
  */
 public class HtmlPage {
     ArrayList<WebElement> webElements = new ArrayList<WebElement>();
-    private String cssRef = "<link rel=\"stylesheet\" href=\"css.css\"/>";
+    private String cssRefTable = "<link rel=\"stylesheet\" href=\"cssTable.css\"/>";
+    private String cssRefDiv= "<link rel=\"stylesheet\" href=\"cssDiv.css\"/>";
 
     public HtmlPage() {
 
@@ -13,7 +14,7 @@ public class HtmlPage {
 
     public String toString() {
         StringBuilder buf = new StringBuilder();
-        buf.append("<html>" + "<head>" + cssRef + "</head>");
+        buf.append("<html>" + "<head>" + cssRefTable + cssRefDiv + "</head>");
         buf.append("<body>");
         for(WebElement webElement : webElements)
         {
