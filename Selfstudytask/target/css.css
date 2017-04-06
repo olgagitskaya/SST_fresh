@@ -13,3 +13,11 @@
     text-align: center;
     border: 1px solid blue;
 }
+
+.divLayout {
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin: 1em;
+    font-color: red;
+}

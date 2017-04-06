@@ -20,7 +20,7 @@ public class Table extends WebElement{
         //String style = super.getStyle().toString();
         String classProperty = super.getClassProperty().toString();
         StringBuilder buf = new StringBuilder();
-        buf.append("<table" + classProperty + ">\n");
+        buf.append("<table class=\"" + classProperty + "\">\n");
         for (Row row : rowList) {
             buf.append(row.toString());
         }

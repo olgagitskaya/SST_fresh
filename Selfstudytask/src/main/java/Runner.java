@@ -11,8 +11,8 @@ public class Runner {
         WebElement webElement3 = list;
         WebElement webElement4 = new Table(5,8);
        // webElement4.setStyle(" style=\"background-color: green; border-color: red; border-style: solid; padding: 5px\"");
-        webElement4.setClassProperty(" class =\"tableLayout\"");
-        webElement1.setClassProperty(" class =\"divLayout\"");
+        webElement4.setClassProperty("tableLayout");
+        webElement1.setClassProperty("divLayout");
 
         HtmlPage page = new HtmlPage();
         page.addWebElement(webElement1);
