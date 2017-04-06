@@ -10,7 +10,8 @@ public class Runner {
         list.addListItem(new ListItem("Item number two"));
         WebElement webElement3 = list;
         WebElement webElement4 = new Table(5,8);
-        webElement4.setStyle(" style=\"background-color: green; border-color: red; border-style: solid; padding: 5px\"");
+       // webElement4.setStyle(" style=\"background-color: green; border-color: red; border-style: solid; padding: 5px\"");
+        webElement4.setClassProperty(" class =\"tableLayout\"");
 
         HtmlPage page = new HtmlPage();
         page.addWebElement(webElement1);

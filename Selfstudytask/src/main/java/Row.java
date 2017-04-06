@@ -3,7 +3,7 @@ import java.util.ArrayList;
 /**
  * Created by Volha_Hitskaya on 4/5/2017.
  */
-public class Row {
+public class Row extends WebElement{
     ArrayList<Cell> cellList = new ArrayList<Cell>();
     boolean isHeader;
 

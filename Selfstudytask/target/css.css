@@ -1,0 +1,15 @@
+.tableLayout {
+    border: 3px solid blue;
+}
+
+.tableLayout th{
+    background: green;
+    text-align: center;
+    border: 1px solid blue;
+}
+
+.tableLayout td{
+    background: grey;
+    text-align: center;
+    border: 1px solid blue;
+}

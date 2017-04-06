@@ -17,9 +17,10 @@ public class Table extends WebElement{
     }
 
     public String toString() {
-        String style = super.getStyle().toString();
+        //String style = super.getStyle().toString();
+        String classProperty = super.getClassProperty().toString();
         StringBuilder buf = new StringBuilder();
-        buf.append("<table" + style + ">\n");
+        buf.append("<table" + classProperty + ">\n");
         for (Row row : rowList) {
             buf.append(row.toString());
         }

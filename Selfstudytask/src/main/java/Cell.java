@@ -1,7 +1,7 @@
 /**
  * Created by Volha_Hitskaya on 4/5/2017.
  */
-public class Cell {
+public class Cell extends WebElement{
 
     boolean isHeader;
     String text = "";
